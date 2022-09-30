@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poopins', sans-serif;
+}
+
+:root{
+  --body-color: #efefef;
+  --nav-color: #1876f2;
+  --bg-color: #fff;
+  --primary-color: #edf2fc;
+  --secondary-color: #212121;
+}
+
+
+
+
+/* profile page */
+.profile-container{
+  padding: 20px 15%;
+  color: #626262;
+}
+
+.cover-img{
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 14px;
+}
+
+.profile-details{
+  background: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}

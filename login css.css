@@ -1,117 +1,149 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.tulisan{
+    position: center;
+    font-family: Georgia;
+    margin-bottom: 20px;
 }
 
 body{
+    box-sizing: border-box;
+    background-image: url('gambar/bg/bg\ gradasi.jpeg');
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+    background-position: center;
+    background-size: cover;
 }
 
-.container{
-    width: 100%;
-    display: flex;
-    max-width: 850px;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
 }
 
 .login{
-    width: 400px;
-}
-
-form{
-    width: 250px;
-    margin: 60px auto;
-}
-
-h1{
-    margin: 20px;
-    text-align: center;
-    font-weight: bolder;
-    text-transform: uppercase;
-}
-
-hr{
-    border-top: 2px solid #2c3aff;
-}
-
-p{
-    text-align: center;
-    margin: 10px;
-}
-
-.right img{
-    width: 450px;
-    height: 100%;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-}
-
-form label{
-    display: block;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 5px;
-}
-
-input{
-    width: 100%;
-    margin: 2px;
-    border: none;
-    outline: none;
-    padding: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0,0,0,0.7);
     border-radius: 5px;
-    border: 1px solid gray;
+    box-shadow: 1px 1px 20px cyan;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
 }
 
-button{
-    border: none;
-    outline: none;
-    padding: 8px;
-    width: 225px;
-    color: #fff;
-    font-size: 16px;
+.login  header{
+    margin-bottom: 25px;
+    margin: 0 0 25px 0;
+}
+
+img{
+    position: relative;
+    width: 80px;
+    top: 50%;
+    border-radius: 50%;
+    box-shadow: 1px 1px 15px cyan;
+}
+
+.field{
+        border: 1px solid cyan;
+        border-radius: 50px;
+        background-color: transparent;
+        width: 100%;
+        margin-bottom: 15px;
+        display: flex;
+    }
+    .field span{
+        color: white;
+        width: 40px;
+        line-height: 45px;
+        text-align: center;
+    }
+    .field input{
+        width: 100%;
+        height: 45px;
+        font-size: 1.1rem;
+        padding: 5px;
+        color: cyan;
+        background-color: transparent;
+        border: none;
+    }
+    .forgot-password
+    {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .forgot-password a{
+        color: white;
+        text-decoration: none;
+    }
+    .forgot-password a:hover
+    {
+        text-decoration: underline;
+    }
+    .submit
+    {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 45px;
+        margin-bottom: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2rem;
+        color: white;
+        background-color: transparent;
+        border: 1px solid cyan;
+        border-radius: 125px;
+    }
+.submit:hover{
     cursor: pointer;
-    margin-top: 20px;
-    border-radius: 5px;
-    background: #ffa12c;
+    background-color: orangered;
+}
+.login-form-copy{
+    margin-bottom: 15px;
+}
+.login-form_sign-up{
+    text-decoration: none;
+    color: rgb(18, 190, 190);
+}
+.social-icons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+.social-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+.facebook{
+    background-color: #385998;
+}
+.instagram{
+    background: linear-gradient(rgb(243,5,171),rgb(205,95,4),yellow);
+}
+.twitter{
+    background-color: #00ACEE;
+}
+.google
+{
+    background-color: #CA3224;
+}
+.linkedin{
+    background-color: #0E76AB;
 }
 
-button:hover{
-        background:rgba(227, 40, 40, 0.1)
-}
-
-@media (max-width: 800px){
-    .container{
-        width: 100%;
-        max-width: 750px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    form{
-        width: 300px;
-        margin: 20px auto;
-    }
-
-    .login{
-        width: 400px;
-        padding: 20px;
-    }
-
-    button{
-        width: 100%;
-    }
-
-    .right img{
-        width: 100%;
-        height: 100%;
-    }
+input:focus,input:hover,input:active{
+     outline: none;
 }
