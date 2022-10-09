@@ -1,0 +1,169 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #dedede;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    font-family: roboto;
+    margin-left: 20px;
+  }
+  
+  .container {
+    width: 60%;
+    overflow: hidden;
+    min-height: 250px;
+    background: white;
+    margin: auto;
+    border-radius: 50px;
+    box-shadow: 1px 1px 3px black;
+  }
+  
+  .caption .isi {
+    width: 50%;
+    overflow: hidden;
+    min-height: 200px;
+    background: white;
+    margin: auto;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px black;
+  }
+  
+  .caption .isi .isi-cap .ketik {
+    width: 50%;
+    overflow: hidden;
+    min-height: 200px;
+    background: white;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px black;
+  }
+  
+  .kotak .image {
+    width: 40%;
+    overflow: hidden;
+    min-height: 100px;
+    background: white;
+    margin: auto;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px black;
+  }
+  
+  .image {
+    min-height: 200px;
+    width: 50%;
+    margin: auto;
+    object-fit: cover;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .image img {
+    width: 100%;
+  }
+  .tombol {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  button {
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: unset;
+    border-radius: 4px;
+    border: 1px solid #dedede;
+    cursor: pointer;
+  }
+  .btn-success {
+    background: green;
+    color: white;
+  }
+  .btn-danger {
+    background: red;
+    color: white;
+  }
+  .btn-primary {
+    background: rgb(211, 164, 34);
+    color: white;
+  }
+  p {
+    color: grey;
+    font-size: 12px;
+    text-align: center;
+  }
+  .head {
+    background: #baffae;
+    padding: 20px;
+    border-bottom: 1px solid #c8c8c8;
+  }
+  .head h2 {
+    margin: 0px;
+    font-weight: 300;
+  }
+  .fot {
+    padding: 10px;
+    border-top: 1px solid #c8c8c8;
+    font-size: 12px;
+  }
+  .kata {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  .kata p {
+    color: black;
+    font-size: 15px;
+    text-align: left;
+  }
+  
+  .contact .row {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7rem;
+    align-items: center;
+  }
+  
+  .contact .row form {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .contact .row form .box {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    padding: 0 1rem;
+    margin: 1rem 0;
+    height: 4rem;
+    width: 49%;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: none;
+  }
+  
+  .contact .row form .box::placeholder {
+    text-transform: capitalize;
+    color: #eee;
+  }
+  
+  .contact .row form .message {
+    padding: 1rem;
+    height: 15rem;
+    resize: none;
+    width: 100%;
+  }
+  
+  .contact .row form .btn {
+    margin-bottom: 1rem;
+  }
+  
+  .caption .isi .row .box-message {
+    margin-left: 28px;
+    margin-right: 10px;
+  }
