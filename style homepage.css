@@ -20,6 +20,39 @@
 }
 
 
+.nav__container {
+    max-width: 93.75rem;
+    margin: 0 auto;
+    display:flex;
+}
+
+.right .category li {
+    list-style: none;
+    margin-left :10px;
+    margin-right:10px;
+    padding-left:0px;
+    padding-right:0px;
+    padding-top:5px;
+    padding-bottom:10px;
+    border-bottom: 1px solid transparent;
+    transition: all 0.4s;
+}
+
+.right .category li:hover {
+    border-bottom-color: rgb(181, 0, 247);
+}
+
+
+.hero__nav-items {
+    margin-left: auto;
+}
+
+.hero_nav-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
 *,
 *::before,
 *::after{
@@ -78,6 +111,7 @@ img{
 .btn-primary{
     background: var(--color-primary);
     color: white;
+    
 }
 
 .text-bold{
@@ -256,6 +290,7 @@ main .container .left .profile{
 
 
 
+
 /* buat dapet notifikasi */
 .left .notifications-popup{
     position: absolute;
@@ -291,7 +326,6 @@ main .container .left .profile{
 .left .notifications-popup small{
     display: block;
 }
-
 /* tengah (story) */
 .middle .stories{
     display: flex;
@@ -423,30 +457,6 @@ main .container .left .profile{
     border: 2px solid var(--color-white);
     margin-left: -0.6rem;;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*
@@ -605,30 +615,8 @@ main .container .right .profile{
 */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ini buat sisi sebelah kanan */
 main .container .right{
-    height: max-content;
     position: sticky;
     top: var(--sticky-top-right);
     bottom: 0;
@@ -638,6 +626,32 @@ main .container .right{
     background: var(--color-white);
     border-radius: var(--card-border-radius);
     padding: var(--card-padding);
+}
+
+.button {
+    text-decoration: none;
+    color: rgba(234, 215, 215, 0.913);
+    background: rgb(207, 193, 217);
+    padding: 15px 40px;
+    border-radius: 4px;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    color: rgb(41, 135, 243);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+.btn btn-primary:hover{
+    color: rgb(41, 135, 243);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+.create btn btn-primary{
+    text-decoration: none;
+    color:#000;
 }
 
 .right .messages .heading{
@@ -657,17 +671,11 @@ main .container .right{
 }
 
 .right .messages .category{
+    cursor :pointer;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: row;
     margin-bottom: 1rem;
-}
-
-.right .messages .category h6{
-    width: 100%;
-    text-align: center;
-    border-bottom: 4px solid var(--color-light);
-    padding-bottom: 0.5rem;
-    font-size: 0.85rem;
 }
 
 .right .messages .category .active{
@@ -684,6 +692,7 @@ main .container .right{
 .right .message .profile-photo{
     height: max-content;
     position: sticky;
+    
     top: var(--sticky-top-right);
     bottom: 0;
 }
@@ -716,6 +725,11 @@ main .container .right{
 .right .friend-requests{
     margin-top: 1rem;
 } 
+
+.right .heading .Tulisan {
+    margin-top:5px;
+    color:rgb(16, 55, 253);
+}
 
 .right .friend-requests h4{
     color: var(--color-gray);
@@ -765,6 +779,7 @@ main .container .right{
     padding: 3rem;
     border-radius: var(--card-border-radius);
     width: 50%;
+    box-shadow: 0 0 1rem var(--color-primary);
 }
 
 
@@ -852,9 +867,6 @@ main .container .right{
 }
 
 
-
-
-
 /* background */
 .customize-theme .background{
     margin-top: 2rem;
@@ -903,11 +915,11 @@ main .container .right{
 
 
 
-/* media query */
+/* media query buat ukuran besar*/
 @media screen and (max-width: 1200px){
     .container{
         width: 96;
-    }
+    } /* atur box */
 
     main .container{
         grid-template-columns: 5rem auto 30vw;
@@ -917,40 +929,68 @@ main .container .right{
     .left{
         width: 5rem;
         z-index: 5;
-    }
+    } /* nanti buat set bagian kiri kita */
 
     main .container .left .profile{
         display: none;
-    }
+    } /* profile nanti coba di set ulang setelah ini */
 
     .sidebar h3{
         display: none;
-    }
+    } /* masih ada kurang coba nanti cek */
 
     .left .btn{
         display: none;
     }
+
+    .customize-theme .card{
+        width: 80vw;
+    }
 }
 
+/* media query buat ukuran kecil */
+@media screen and (max-width: 992px){
+    nav .search-bar{
+        display: none;
+    }
+
+    main .container{
+        grid-template-columns: 0 auto 5rem;
+        gap: 0;
+    }
+
+    main .container .left{
+        grid-column: 3/4;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
 
 
+    /* kita atur notifikasi */
+    .left .notifications-popup{ /* notifikasi masuk nanti bakal ke set sendiri */
+        position: absolute;
+        left: -20rem;
+        width: 20rem;
+    }
 
+    .left .notifications-popup::before{ 
+        display: absolute;
+        top: 1.3rem;
+        left: calc(20rem - 0.6rem);
+        display: block;
+    }
 
+    main .container .middle{ /* diubah dulu 1/3 nanti coba liat hasil sama diskusi lagi pas nginep */
+        grid-column: 1/3;
+    }
 
+    main .container .right{ /* sebelah kanan jadinya none dulu */
+        display: none;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .customize-theme .card{
+        width: 92vw;
+    }
+}
 
