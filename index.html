@@ -24,7 +24,7 @@
                 </div>
                 
                 <div class="create">
-
+                    <label class="btn btn-primary"  for="create-post"> Create </label>
                     <div class="profile-photo">
                         <img src="gambar/profile/peter.jpeg">
                     </div>
@@ -52,22 +52,16 @@
                     <div class="sidebar">
                         <!-- home -->
                         <a class="menu-item active">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
-                                <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
-                              </svg></span><h3>Home</h3>
+                            <span><i class="fa-solid fa-house-user"></i></span><h3>Home</h3>
                         </a>
                             <!-- exlplore -->
                             <a class="menu-item">
-                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                                  </svg></span><h3>Explore</h3>
+                                <span><i class="fa-thin fa-circle-location-arrow"></i></span><h3>Explore</h3>
                             </a>
 
                             <!-- notif -->
                             <a class="menu-item" id="notifications">
-                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
-                                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
-                                  </svg><small class="notification-count">10+</small></i></span><h3>Notifications</h3>
+                                <span><i class="fa-thin fa-bell"><small class="notification-count">10+</small></i></span><h3>Notifications</h3>
                                 <!-- hasil buat nampung notif -->
                                 <div class="notifications-popup">
                                     <div>
@@ -156,39 +150,32 @@
                             </a>
 
                             <!-- pesan -->
-                            <a class="menu-item" id="messages-notification">
-                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
-                                  </svg><small class="notification-count">6</small></span><h3>Message</h3>
+                            <a class="menu-item" id="messages-notifications">
+                                <span><i class="fa-thin fa-envelope"><small class="notification-count">6</small></i></span><h3>Message</h3>
                             </a>
 
                             <!-- simpan -->
                             <a class="menu-item">
-                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save" viewBox="0 0 16 16">
-                                    <path d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9.5a1 1 0 0 0-1 1v7.293l2.646-2.647a.5.5 0 0 1 .708.708l-3.5 3.5a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L7.5 9.293V2a2 2 0 0 1 2-2H14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h2.5a.5.5 0 0 1 0 1H2z"/>
-                                  </svg></span><h3>Saved</h3>
+                                <span><i class="fa-thin fa-folder-arrow-down"></i></span><h3>Saved</h3>
+                            </a>
+
+                            <!-- belanja -->
+                            <a class="menu-item">
+                                <span><i class="fa-thin fa-cart-shopping"></i><h3>Shop</h3>
+                            </a>
+
+                            <!-- theme -->
+                            <a class="menu-item">
+                                <span><i class="fa-thin fa-palette"></i></span><h3>Theme</h3>
                             </a>
 
                             <!-- settings -->
-                                <a class="menu-item">
-                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
-                                        <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
-                                        <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
-                                      </svg></span><h3>Settings</h3>
-                                </a>
-
-                            <!-- theme -->
-                            <a class="menu-item" id="theme">
-                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-palette2" viewBox="0 0 16 16">
-                                    <path d="M0 .5A.5.5 0 0 1 .5 0h5a.5.5 0 0 1 .5.5v5.277l4.147-4.131a.5.5 0 0 1 .707 0l3.535 3.536a.5.5 0 0 1 0 .708L10.261 10H15.5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5H3a2.99 2.99 0 0 1-2.121-.879A2.99 2.99 0 0 1 0 13.044m6-.21 7.328-7.3-2.829-2.828L6 7.188v5.647zM4.5 13a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0zM15 15v-4H9.258l-4.015 4H15zM0 .5v12.495V.5z"/>
-                                    <path d="M0 12.995V13a3.07 3.07 0 0 0 0-.005z"/>
-                                  </svg></span><h3>Theme</h3>
+                            <a class="menu-item">
+                                <span><i class="fa-thin fa-gears"></i></span><h3>Settings</h3>
                             </a>
                     </div>
                     <!-- upload bikin dibawah kiri(?) -->
-                    <label for="create-post" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                      </svg><a href="shop.html">Shop</a> </label>
+                    <label for="create-post" class="btn btn-primary">upload</label>
                 </div>
 
                 <!-- tengah -->
@@ -203,13 +190,13 @@
                         </div>
                         <div class="story">
                             <div class="profile-photo">
-                                <img src="gambar/profile/profile vincent.jpeg">
+                                <img src="gambar/profile/post andrew.jpeg">
                             </div>
-                            <p class="name">vincent</p>
+                            <p class="name">Andrew Simatupang</p>
                         </div>
                         <div class="story">
                             <div class="profile-photo">
-                                <img src="gambar/profile/post andrew.jpeg">
+                                <img src="gambar/profile/andrew.jpeg">
                             </div>
                             <p class="name">Andrew</p>
                         </div>
@@ -227,7 +214,7 @@
                         </div>
                         <div class="story">
                             <div class="profile-photo">
-                                <img src="gambar/profile/bayu1.jpeg">
+                                <img src="gambar/profile/peter.jpeg">
                             </div>
                             <p class="name">nama</p>
                         </div>
@@ -245,7 +232,7 @@
                             <img src="gambar/profile/peter.jpeg">
                         </div>
                         <input type="text" placeholder="Ekspresikan cerita anda!" id="create-post">
-                        <!--<input type="submit" value="Create Something" class="btn btn-primary">--><a href="upload.html">Create Something</a>
+                        <input type="submit" value="Post" class="btn btn-primary">
                     </form>
 
                     <!-- isi post foto -->
@@ -254,11 +241,11 @@
                             <div class="head">
                                 <div class="user">  
                                     <div class="profile-photo">
-                                        <img src="gambar/profile/profile vincent.jpeg">
+                                        <img src="gambar/profile/post peter.jpeg">
                                     </div>
                                     <div class="info">
                                         <li><a href="andrew.html"><h3>Vincent</h3></a></li>
-                                        <small>Pantai Indah Kapuk</small>
+                                        <small>IRUUM Complex</small>
                                     </div>
                                 </div>
                                 <span class="edit">
@@ -272,21 +259,9 @@
 
                             <div  class="action-button">
                                 <div class="interaction-buttons">
-                                    <div class="jarak">
-                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                                      </svg></span>
-                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
-                                        <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                                        <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"/>
-                                      </svg></span>
-                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
-                                        <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
-                                      </svg></span>
-                                    </div>
-                                      <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
-                                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
-                                    </svg></span>
+                                    <span><i class="bi bi-hand-thumbs-up"></i></span>
+                                    <span><i class="bi bi-chat-dots"></i></span>
+                                    <span><i class="bi bi-share"></i></span>
                                 </div>
                                 <div class="bookmark">
                                     <span><i class="bi bi-bookmark"></i></span>
@@ -301,7 +276,7 @@
                             </div>
 
                             <div class="caption">
-                                <p><b>Vincent</b> Main di pantai dulu guys </p>
+                                <p><b>Vincent</b> bright night style ✨🌃 all black but still shinin'<br>location: @iruum_complex</p>
                             </div>
                             <div class="comments text-muted">View all 98 comments</div>
                             <!-- selesai, buat next post ambil akhir div dari "head" -->
@@ -314,7 +289,7 @@
                                         <img src="gambar/profile/peter.jpeg">
                                     </div>
                                     <div class="info">
-                                        <a href="profilepeter.html"><h3>Peter.jt</h3></a>
+                                        <h3>Peter.jt</h3>
                                         <small>Ciputra Hotel, Grogol</small>
                                     </div>
                                 </div>
@@ -329,19 +304,9 @@
 
                             <div  class="action-button">
                                 <div class="interaction-buttons">
-                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                                      </svg></span>
-                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
-                                        <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                                        <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"/>
-                                      </svg></span>
-                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
-                                        <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
-                                      </svg></span>
-                                      <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
-                                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
-                                    </svg></span>
+                                    <span><i class="bi bi-hand-thumbs-up"></i></span>
+                                    <span><i class="bi bi-chat-dots"></i></span>
+                                    <span><i class="bi bi-share"></i></span>
                                 </div>
                                 <div class="bookmark">
                                     <span><i class="bi bi-bookmark"></i></span>
@@ -384,19 +349,9 @@
 
                             <div  class="action-button">
                                 <div class="interaction-buttons">
-                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                                      </svg></span>
-                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
-                                        <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                                        <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"/>
-                                      </svg></span>
-                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
-                                        <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
-                                      </svg></span>
-                                      <span class="kanan"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
-                                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
-                                    </svg></span>
+                                    <span><i class="bi bi-hand-thumbs-up"></i></span>
+                                    <span><i class="bi bi-chat-dots"></i></span>
+                                    <span><i class="bi bi-share"></i></span>
                                 </div>
                                 <div class="bookmark">
                                     <span><i class="bi bi-bookmark"></i></span>
@@ -439,152 +394,6 @@
 
                             <div  class="action-button">
                                 <div class="interaction-buttons">
-                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                                      </svg></span>
-                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
-                                        <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                                        <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"/>
-                                      </svg></span>
-                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
-                                        <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
-                                      </svg></span>
-                                      <span class="kanan"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
-                                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
-                                    </svg></span>
-                                </div>
-                                <div class="bookmark">
-                                    <span><i class="bi bi-bookmark"></i></span>
-                                </div>
-                            </div>
-
-                            <div class="liked-by">
-                                <span><img src="gambar/profile/ardan.jpeg"></span>
-                                <span><img src="gambar/profile/peter.jpeg"></span>
-                                <span><img src="gambar/profile/peter.jpeg"></span>
-                                <p>Liked by <b> Vincent, Peter.jt</b> and <b>2,016 others</b></p>
-                            </div>
-
-                            <div class="caption">
-                                <p><b>Ardan</b> Main gitar adalah hobby ku #hobby</p>
-                            </div>
-                            <div class="comments text-muted">View all 98 comments</div>
-                            <!-- selesai, buat next post ambil akhir div dari "head" -->
-                        </div>
-
-                        <div class="feed">
-                            <div class="head">
-                                <div class="user">
-                                    <div class="profile-photo">
-                                        <img src="gambar/profile/venrico.JPG">
-                                    </div>
-                                    <div class="info">
-                                        <h3>Venrico</h3>
-                                        <small>Universitas Tarumanagara</small>
-                                    </div>
-                                </div>
-                                <span class="edit">
-                                    <i class="fa-thin fa-ellipsis-stroke-vertical"></i>
-                                </span>
-                            </div>
-
-                            <div class="photo">
-                                <img src="gambar/profile/venrico.JPG">
-                            </div>
-
-                            <div  class="action-button">
-                                <div class="interaction-buttons">
-                                    <span><i class="bi bi-hand-thumbs-up"></i></span>
-                                    <span><i class="bi bi-chat-dots"></i></span>
-                                    <span><i class="bi bi-share"></i></span>
-                                </div>
-                                     <div class="bookmark">
-                                    <span><i class="bi bi-bookmark"></i></span>
-                                </div>
-                            </div>
-
-                            <div class="liked-by">
-                                <span><img src="gambar/profile/ardan.jpeg"></span>
-                                <span><img src="gambar/profile/peter.jpeg"></span>
-                                <span><img src="gambar/profile/peter.jpeg"></span>
-                                <p>Liked by <b> Vincent, Peter.jt</b> and <b>2,016 others</b></p>
-                            </div>
-
-                            <div class="caption">
-                                <p><b>Venrico</b> Mau organisasi seperti ane? dm Earth. ane ya</p>
-                            </div>
-                            <div class="comments text-muted">View all 98 comments</div>
-                            <!-- selesai, buat next post ambil akhir div dari "head" -->
-                        </div>
-
-                        <div class="feed">
-                            <div class="head">
-                                <div class="user">
-                                    <div class="profile-photo">
-                                        <img src="gambar/profile/peter.jpeg">
-                                    </div>
-                                    <div class="info">
-                                        <h3>Bayu</h3>
-                                        <small>Jalan Raya</small>
-                                    </div>
-                                </div>
-                                <span class="edit">
-                                    <i class="fa-thin fa-ellipsis-stroke-vertical"></i>
-                                </span>
-                            </div>
-
-                            <div class="photo">
-                                <img src="gambar/profile/bayu2.jpeg">
-                            </div>
-
-                            <div  class="action-button">
-                                <div class="interaction-buttons">
-                                    <span><i class="bi bi-hand-thumbs-up"></i></span>
-                                    <span><i class="bi bi-chat-dots"></i></span>
-                                    <span><i class="bi bi-share"></i></span>
-                                </div>
-                                     <div class="bookmark">
-                                    <span><i class="bi bi-bookmark"></i></span>
-                                </div>
-                            </div>
-
-                            <div class="liked-by">
-                                <span><img src="gambar/profile/ardan.jpeg"></span>
-                                <span><img src="gambar/profile/peter.jpeg"></span>
-                                <span><img src="gambar/profile/peter.jpeg"></span>
-                                <p>Liked by <b> Vincent, Peter.jt</b> and <b>2,016 others</b></p>
-                            </div>
-
-                            <div class="caption">
-                                <p><b>Bayu</b> Motor modif nih! senggol kak?</p>
-                            </div>
-                            <div class="comments text-muted">View all 98 comments</div>
-                            <!-- selesai, buat next post ambil akhir div dari "head" -->
-                        </div>
-
-
-                        <div class="feed">
-                            <div class="head">
-                                <div class="user">
-                                    <div class="profile-photo">
-                                        <img src="gambar/profile/profile adit.jpeg">
-                                    </div>
-                                    <div class="info">
-                                        <h3>Aditya</h3>
-                                        <small>Panggung</small>
-                                    </div>
-                                </div>
-                                <span class="edit">
-                                    <i class="fa-thin fa-ellipsis-stroke-vertical"></i>
-                                </span>
-                            </div>
-
-                            <div class="photo">
-                                <img src="gambar/profile/post adit.jpeg">
-                            </div>
-
-                            <div  class="action-button">
-                                <div class="interaction-buttons">
                                     <span><i class="bi bi-hand-thumbs-up"></i></span>
                                     <span><i class="bi bi-chat-dots"></i></span>
                                     <span><i class="bi bi-share"></i></span>
@@ -602,7 +411,7 @@
                             </div>
 
                             <div class="caption">
-                                <p><b>Vincent</b> Music is my life</p>
+                                <p><b>Vincent</b>bright night style ✨🌃 all black but still shinin'<br>location: @iruum_complex</p>
                             </div>
                             <div class="comments text-muted">View all 98 comments</div>
                             <!-- selesai, buat next post ambil akhir div dari "head" -->
@@ -625,7 +434,142 @@
                             </div>
 
                             <div class="photo">
-                                <img src="gambar/profile/bayu2.jpeg">
+                                <img src="gambar/profile/vave.jpg">
+                            </div>
+
+                            <div  class="action-button">
+                                <div class="interaction-buttons">
+                                    <span><i class="bi bi-hand-thumbs-up"></i></span>
+                                    <span><i class="bi bi-chat-dots"></i></span>
+                                    <span><i class="bi bi-share"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="bi bi-bookmark"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="liked-by">
+                                <span><img src="gambar/profile/ardan.jpeg"></span>
+                                <span><img src="gambar/profile/peter.jpeg"></span>
+                                <span><img src="gambar/profile/peter.jpeg"></span>
+                                <p>Liked by <b> Vincent, Peter.jt</b> and <b>2,016 others</b></p>
+                            </div>
+
+                            <div class="caption">
+                                <p><b>Vincent</b>bright night style ✨🌃 all black but still shinin'<br>location: @iruum_complex</p>
+                            </div>
+                            <div class="comments text-muted">View all 98 comments</div>
+                            <!-- selesai, buat next post ambil akhir div dari "head" -->
+                        </div>
+
+                        <div class="feed">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-photo">
+                                        <img src="gambar/profile/peter.jpeg">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Vincent</h3>
+                                        <small>IRUUM Complex</small>
+                                    </div>
+                                </div>
+                                <span class="edit">
+                                    <i class="fa-thin fa-ellipsis-stroke-vertical"></i>
+                                </span>
+                            </div>
+
+                            <div class="photo">
+                                <img src="gambar/profile/vave.jpg">
+                            </div>
+
+                            <div  class="action-button">
+                                <div class="interaction-buttons">
+                                    <span><i class="bi bi-hand-thumbs-up"></i></span>
+                                    <span><i class="bi bi-chat-dots"></i></span>
+                                    <span><i class="bi bi-share"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="bi bi-bookmark"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="liked-by">
+                                <span><img src="gambar/profile/ardan.jpeg"></span>
+                                <span><img src="gambar/profile/peter.jpeg"></span>
+                                <span><img src="gambar/profile/peter.jpeg"></span>
+                                <p>Liked by <b> Vincent, Peter.jt</b> and <b>2,016 others</b></p>
+                            </div>
+
+                            <div class="caption">
+                                <p><b>Vincent</b>bright night style ✨🌃 all black but still shinin'<br>location: @iruum_complex</p>
+                            </div>
+                            <div class="comments text-muted">View all 98 comments</div>
+                            <!-- selesai, buat next post ambil akhir div dari "head" -->
+                        </div>
+
+                        <div class="feed">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-photo">
+                                        <img src="gambar/profile/peter.jpeg">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Vincent</h3>
+                                        <small>IRUUM Complex</small>
+                                    </div>
+                                </div>
+                                <span class="edit">
+                                    <i class="fa-thin fa-ellipsis-stroke-vertical"></i>
+                                </span>
+                            </div>
+
+                            <div class="photo">
+                                <img src="gambar/profile/vave.jpg">
+                            </div>
+
+                            <div  class="action-button">
+                                <div class="interaction-buttons">
+                                    <span><i class="bi bi-hand-thumbs-up"></i></span>
+                                    <span><i class="bi bi-chat-dots"></i></span>
+                                    <span><i class="bi bi-share"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="bi bi-bookmark"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="liked-by">
+                                <span><img src="gambar/profile/ardan.jpeg"></span>
+                                <span><img src="gambar/profile/peter.jpeg"></span>
+                                <span><img src="gambar/profile/peter.jpeg"></span>
+                                <p>Liked by <b> Vincent, Peter.jt</b> and <b>2,016 others</b></p>
+                            </div>
+
+                            <div class="caption">
+                                <p><b>Vincent</b>bright night style ✨🌃 all black but still shinin'<br>location: @iruum_complex</p>
+                            </div>
+                            <div class="comments text-muted">View all 98 comments</div>
+                            <!-- selesai, buat next post ambil akhir div dari "head" -->
+                        </div>
+
+                        <div class="feed">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-photo">
+                                        <img src="gambar/profile/peter.jpeg">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Vincent</h3>
+                                        <small>IRUUM Complex</small>
+                                    </div>
+                                </div>
+                                <span class="edit">
+                                    <i class="fa-thin fa-ellipsis-stroke-vertical"></i>
+                                </span>
+                            </div>
+
+                            <div class="photo">
+                                <img src="gambar/profile/vave.jpg">
                             </div>
 
                             <div  class="action-button">
@@ -992,6 +936,10 @@
                     </div>
                 </div>
             </div>
-        <script src="js homepage.js"></script>
+        </div>
+
+
+
+
     </body>
 </html>

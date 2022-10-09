@@ -101,7 +101,7 @@ ul{
     display: inline-block;
     height: 40px;
     width: 40px;
-
+    background-color: rgba(255, 255, 255, 0.2);
     margin: 0 10px 10px 0;
     text-align: center;
     line-height: 40px;
@@ -126,4 +126,22 @@ ul{
     .footer-col{
         width: 100px;
     }
+}
+
+.card-group .card{
+    margin-left: 30rem;
+    margin-right: 30rem;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+}
+
+
+
+
+
+
+
+
+
+
 
