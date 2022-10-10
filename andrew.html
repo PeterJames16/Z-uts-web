@@ -1,98 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Bootstrap Theme Simply Me</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <style>
-      body {
-        font: 20px Montserrat, sans-serif;
-        line-height: 1.8;
-        color: #000000;
-      }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Andrew</title>
 
-      p {
-        font-size: 16px;
-      }
-      .margin {
-        margin-bottom: 45px;
-      }
-      .bg-1 {
-        background-color: #ffffff; /* Green */
-        color: #ffffff;
-      }
-      .container-fluid {
-        padding-top: 70px;
-        padding-bottom: 70px;
-      }
-      .navbar {
-        padding-top: 5px;
-        padding-bottom: 5px;
-        border: 0;
-        border-radius: 0;
-        margin-bottom: 0;
-        font-size: 12px;
-        letter-spacing: 5px;
-      }
-      .navbar-nav li a:hover {
-        color: #1abc9c !important;
-      }
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 
-      .text-dark{
-        color: black;
-      }
-    </style>
-  </head>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="andrew css.css">
 
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Profile</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Saved</a></li>
-            <li><a href="#">Archive</a></li>
-            <li><a href="#">Settings</a></li>
-          </ul>
-        </div>
-      </div>
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div class="user">
+        <img src="gambar/profile/post andrew.jpeg" alt="">
+        <h3 class="name">Andrew</h3>
+        <p class="post"></p>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#service">service</a></li>
+            <li><a href="#education">education</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
     </nav>
 
-    <!-- First Container -->
-    <div class="container-fluid bg-1 text-">
-      <img src="gambar/profile/bayu1.jpeg" class="img-responsive img-circle margin img-thumbnail" style="display: inline" alt="Bird" width="200" height="350" />
+</header>
 
-      <p class="text-dark">I'm an Programer</p>
-      
-    </div>
+<!-- header section ends -->
 
-    <!-- Third Container (Grid) -->
-    <div class="container-fluid bg-3 text-center">
-      <h3 class="margin"></h3>
-      <br />
-      <div class="row">
-        <div class="col-sm-4">
-          <img src="gambar/profile/post andrew.jpeg" class="img-responsive margin img-thumbnail" style="width: 100%" alt="Image" />
+<!-- content section starts  -->
+
+<div class="container">
+
+    <section class="home" id="home">
+        <center><h1>3 176 139</h3></center>
+        <center><h2>posts followers following</h3></center>
+            <br>
+            <br>
+        <h3 class="name">Andrew Castello Purba</h3>
+        <h3 class="post">Bio -><span class="typing-text"></span></h3>
+
+        <a href="#"><button class="btn">Post</button></a>
+        
+        <!--
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a><img src="gambar/profile/peter.jpeg">
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+            <a href="#" class="fab fa-linkedin"></a>
         </div>
-        <div class="col-sm-4">
-          <img src="gambar/profile/andri.jpeg" class="img-responsive margin img-thumbnail" style="width: 100%" alt="Image" />
+        -->
+        <div class="share">
+            <img src="gambar/profile/post andrew.jpeg" style="width: 30%" class="a">
+            <img src="gambar/profile/andrew.jpeg" style="width:30%" class="a">
         </div>
-        <div class="col-sm-4">
-          <img src="gambar/profile/post ardan.jpeg" class="img-responsive margin img-thumbnail" style="width: 100%" alt="Image" />
+
+    </section>
+
+    <!-- about section  -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading">about me</h1>
+
+        <div class="content">
+            <center><h3 class="name"><span>Andrew Castello Purba</span></h3></center>
+            <p>Mahasiswa Untar jurusan Teknik Informatika</p>
         </div>
-      </div>
-    </div>
-  </body>
+
+        <div class="skills">
+            <div class="progress">
+                <h3>html 
+                    <span>80%</span></h3>
+                <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+                <h3>css <span>70%</span></h3>
+                <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+                <h3>javascript <span>65%</span></h3>
+                <div class="bar"><span></span></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- service section  -->
+    <section class="service" id="service">
+
+        <h1 class="heading">my services</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fab fa-html5"></i>
+                <p>html</p>
+            </div>
+
+            <div class="box">
+                <i class="fab fa-css3"></i>
+                <p>css</p>
+            </div>
+
+            <div class="box">
+                <i class="fab fa-js"></i>
+                <p>javascript</p>
+            </div>
+
+            <div class="box">
+                <i class="fab fa-wordpress"></i>
+                <p>wordpress</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-paint-brush"></i>
+                <p>edit</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <p>html</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- education section  -->
+
+    <section class="education" id="education">
+
+        <h1 class="heading">my education</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="year">2017 - 2018</div>
+                <h3>SMP</h3>
+                <p>SMP METHODIST</p>
+            </div>
+            
+            <div class="box">
+                <div class="year">2021 - 2022</div>
+                <h3>Kuliah</h3>
+                <p>UNIVERSITAS TARUMANAGARA</p>
+            </div>
+
+            <div class="box">
+                <div class="year">2018 - 2021</div>
+                <h3>SMA</h3>
+                <p>SMA NEGRI 18</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- contact section  -->
+    <section class="contact" id="contact">
+
+        <h1 class="heading">contact andri susilo</h1>
+
+        <div class="row">
+
+            <form action="">
+                <input type="text" class="box" placeholder="first name">
+                <input type="text" class="box" placeholder="last name">
+                <input type="email" class="box" placeholder="your email">
+                <input type="text" class="box" placeholder="your project">
+                <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+                <input type="submit" value="message" class="btn">
+            </form>
+
+            <div class="content">
+                <div class="icons">
+                    <h3><i class="fas fa-map-marker-alt"></i> alamat </h3>
+                    <p>Jakarta, Indonesia</p>
+                </div>
+                <div class="icons">
+                    <h3><i class="fas fa-envelope"></i> email </h3>
+                    <p>andrew.535210099@stu.untar.ac.id</p>
+                </div>
+                <div class="icons">
+                    <h3><i class="fas fa-phone"></i> phone </h3>
+                    <p>+62 812 9782 0668</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+<!-- content section ends -->
+
+<!-- theme toggler  -->
+
+<div class="theme-toggler">
+    <span style="background: linear-gradient(deeppink, purple);"></span>
+    <span style="background: linear-gradient(lightgreen, crimson);"></span>
+    <span style="background:linear-gradient(blueviolet, deeppink)"></span>
+    <span style="background:linear-gradient(coral, blueviolet)"></span>
+    <span style="background:linear-gradient(#999, #111)"></span>
+</div>
+
+
+<!-- type.js cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+<script>
+
+    var type = new Typed('.typing-text',{
+        strings : [ 'iyaaa'],
+        typeSpeed: 120,
+        loop:true
+    });
+
+    let themeColor = document.querySelectorAll('.theme-toggler span');
+    themeColor.forEach(color => color.addEventListener('click', () =>{
+        let background = color.style.background;
+        document.querySelector('body').style.background = background;
+    }));
+
+</script>
+
+</body>
 </html>
